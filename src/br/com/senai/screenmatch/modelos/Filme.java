@@ -1,30 +1,13 @@
-public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
-    private double somaDasAvaliacoes;
-    private int totalDeAvaliacao;
-    int duracaoEmMinutos;
+package br.com.senai.screenmatch.modelos;
 
-    int getTotalDeAvaliacao(){
-        return totalDeAvaliacao;
+public class Filme extends Titulo {
+    private String diretor;
+
+    public String getDiretor() {
+        return diretor;
     }
 
-    void exibeFichaTecnica(){
-        System.out.println("Nome do filme: " + nome);
-        System.out.println("Ano de Lançamento: " + anoDeLancamento);
-        System.out.println("Duração em minutos: " + duracaoEmMinutos);
-        System.out.println("Incluído no plano: " + incluidoNoPlano);
+    public void setDiretor(String diretor) {
+        this.diretor = diretor;
     }
-
-    void avalia(double nota){
-        somaDasAvaliacoes += nota;
-        totalDeAvaliacao++;
-    }
-
-    double pegaMedia(){
-        return somaDasAvaliacoes / totalDeAvaliacao;
-    }
-
-
 }
