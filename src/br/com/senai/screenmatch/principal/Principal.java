@@ -1,3 +1,5 @@
+package br.com.senai.screenmatch.principal;
+
 import br.com.senai.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.senai.screenmatch.calculos.FiltroRecomendacao;
 import br.com.senai.screenmatch.modelos.Episodio;
