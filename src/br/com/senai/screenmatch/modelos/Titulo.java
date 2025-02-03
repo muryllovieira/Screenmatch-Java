@@ -4,9 +4,9 @@ import br.com.senai.screenmatch.excecao.ErroDeConversaoDeAnoException;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>{
-    @SerializedName("Title")
+    @SerializedName("Nome")
     private String nome;
-    @SerializedName("Year")
+    @SerializedName("Ano")
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
@@ -87,8 +87,8 @@ public class Titulo implements Comparable<Titulo>{
 
     @Override
     public String toString() {
-        return "nome='" + nome + '\'' +
-                ", anoDeLancamento=" + anoDeLancamento + "," +
-                " duração=" + duracaoEmMinutos;
+        return "(nome = " + nome +
+                ", anoDeLancamento = " + anoDeLancamento + "," +
+                " duração = " + duracaoEmMinutos + ")";
     }
 }
